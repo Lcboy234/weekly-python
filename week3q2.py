@@ -1,10 +1,7 @@
-def has_duplicates(a):
-    duplicate = {}
-    for i in a:
-        if i in duplicate:
-            if duplicate[i] > 1:
-                return True
-            elif duplicate[i] = 1:
-                return None
-            else:
-                return False
+def has_duplicates(words):
+    seen = {}  # dictionary to store encountered words
+    for i in words:
+        if i in seen:
+            return True  # duplicate found
+        seen[i] = None  # store word as key
+    return False  # no duplicates found

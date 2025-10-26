@@ -1,1 +1,2 @@
-def has_duplicates
+def has_duplicates(a):
+    

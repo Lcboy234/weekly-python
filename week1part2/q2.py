@@ -2,7 +2,10 @@
 
 # For example, if n=10, your program must print 24.
 
-n = int(
+n = int(input('enter an integer: 10'))
 
+odd_sum = 0
 
-    tetsing commit
+for i in range(3, n + 1, 2):
+    odd_sum += i
+print(odd_sum)

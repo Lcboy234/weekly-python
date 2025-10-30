@@ -22,7 +22,7 @@ def partialPalindrome(s, n):
     # to lock it in bound
     # AGTT, GTTG, TTGC, TGCC
     for i in range(len(s) - n + 1):
-        substring = s[i:i+n]
+        substring = s[i: i + n]
         if substring == reverse(substring):
             return True
     return False
